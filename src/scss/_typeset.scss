@@ -1,0 +1,139 @@
+
+@font-face {
+	font-family: 'Gotham Bold';
+	src: url(../fonts/GothamBold.ttf);
+  }
+  @font-face {
+	font-family: 'Gotham Book';
+	src: url(../fonts/GothamBook.ttf);
+  }
+  @font-face {
+	font-family: 'Gotham Medium';
+	src: url(../fonts/GothamMedium.ttf);
+  }
+  @font-face {
+	font-family: 'Gotham Light';
+	src: url(../fonts/GothamLight.ttf);
+  }
+  @font-face {
+	font-family: 'Gotham medium 1';
+	src: url(../fonts/GothamMedium_1.ttf);
+  }
+
+  body {
+	font-family: 'Gotham Book';
+	font-size: 22px;
+	line-height: 30px;
+	color: $white;
+}
+
+h1,h2,h3,h5,h6 {
+	font-family: 'Gotham Bold';
+	color: $white;
+}
+
+h1 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 120px;
+	line-height: 120px;
+	@media screen and (max-width: 767px) {
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
+
+h2 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 80px;
+	line-height: 90px;
+	letter-spacing: -0.015em;
+	@media screen and (max-width: 767px) {
+		font-size: 35px;
+		line-height: 35px;
+	}
+}
+
+h3 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 66px;
+	@media screen and (max-width: 767px) {
+		font-size: 31px;
+		line-height: 31px;
+	}
+}
+
+h4 {
+	font-family: 'Gotham Book';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	@media screen and (max-width: 767px) {
+		font-size: 25px;
+		line-height: 25px;
+	}
+}
+
+h5 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 32px;
+	@media screen and (max-width: 767px) {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+h6 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	@media screen and (max-width: 767px) {
+		font-size: 14px;
+		line-height: 14px;
+	}
+}
+
+p {
+	font-family: 'Gotham Book';
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	color: $white;
+	transition: $transition-time all linear;
+}
+a:hover {
+	color: $secondary-shade-tint;
+	text-decoration: none;
+}
+a.disabled {
+	color: $secondary-shade;
+	pointer-events: none;
+  }
+
+ul,ol {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	padding-left: 1.1em;
+}
+
+li {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
