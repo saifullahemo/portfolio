@@ -1,103 +1,191 @@
-
-nav {
-    background: $primary;
-    box-shadow: $white;
-  }
-  .nav-header {
+.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    // text-align: center;
+    height: 100%;
+    width: 100%;
+    // border-right: .1px solid $white;
+    .avatar{
+        width: 100%;
+        // border-bottom: 1px solid $primary-shade;
+        text-align: center;
+        padding: 1rem 0;
+        img{
+            width: 100%;
+            border-radius: 100%;
+            border: 3px solid $primary-shade;
+        }
+    }
+
+    .nav-items{
+        width: 100%;
+        // text-align: left;
+        // justify-content: center;
+        // justify-content: space-between;
+        text-align: center;
+        // align-items:;
+        // left: 55%;
+
+        
+        // text-decoration: none;
+        
+        .active-class{
+            background-color: #06172D;
+            color: white;
+        }
+        li{
+            display: block;
+            a{
+                display: block;
+                padding: 1rem 0;
+                position: relative;
+                z-index: 10;
+                // text-transform: uppercase;
+                transition: all .4s ease-in-out;
+                font-weight: 400;
+                letter-spacing: 2px;
+                text-decoration: none;
+
+                &:hover{
+                    cursor: pointer;
+                    color: $white;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 40%;
+                    background-color: $primary-shade;
+                    transition: All 0.4s cubic-bezier(1,-0.2,.25,.95) ;
+                    opacity: 0.21;
+                    z-index: -1;
+                }
+            }
+
+            a:hover::before{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    footer{
+        border-top: .1px solid $primary-shade-tint;
+        width: 100%;
+        p{
+            padding: 1.3rem 0;
+            font-size: 1.1rem;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+
+
+// nav {
+//     background: $primary;
+//     box-shadow: $white;
+//   }
+//   .nav-header {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
     
-  }
-  .nav-toggle {
-    font-size: 1.5rem;
-    color: $primary;
-    background: transparent;
-    border-color: transparent;
-    transition: var(--transition);
-    cursor: pointer;
-  }
-  .nav-toggle:hover {
-    color: $secondary-shade-tint;
-    transform: rotate(90deg);
-  }
-  .logo {
-    height: 30px;
-  }
-  .links a {
-    color: $white;
-    font-size: 1rem;
-    text-transform: capitalize;
-    // letter-spacing: var(--spacing);
-    display: block;
-    padding: 0.5rem 1rem;
-    // transition: var(--transition);
-    text-decoration: none;
-    list-style: none;
+//   }
+//   .nav-toggle {
+//     font-size: 1.5rem;
+//     color: $primary;
+//     background: transparent;
+//     border-color: transparent;
+//     transition: var(--transition);
+//     cursor: pointer;
+//   }
+//   .nav-toggle:hover {
+//     color: $secondary-shade-tint;
+//     transform: rotate(90deg);
+//   }
+//   .logo {
+//     height: 30px;
+//   }
+//   .links a {
+//     color: $white;
+//     font-size: 1rem;
+//     text-transform: capitalize;
+//     // letter-spacing: var(--spacing);
+//     display: block;
+//     padding: 0.5rem 1rem;
+//     // transition: var(--transition);
+//     text-decoration: none;
+//     list-style: none;
 
-  }
-  .links a:hover {
-    background: $secondary-shade-tint;
-    color: $secondary-shade-tint;
-    padding-left: 1.5rem;
-    list-style: none;
-  }
-  .social-icons {
-    display: none;
-  }
-  .links-container {
-    height: 0;
-    overflow: hidden;
-    transition: var(--transition);
-  }
-  .show-container {
-    height: 10rem;
-  }
-  @media screen and (min-width: 800px) {
-    .nav-center {
-      max-width: 1170px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .nav-header {
-      padding: 0;
-    }
-    .nav-toggle {
-      display: none;
-      list-style: none;
+//   }
+//   .links a:hover {
+//     background: $secondary-shade-tint;
+//     color: $secondary-shade-tint;
+//     padding-left: 1.5rem;
+//     list-style: none;
+//   }
+//   .social-icons {
+//     display: none;
+//   }
+//   .links-container {
+//     height: 0;
+//     overflow: hidden;
+//     transition: var(--transition);
+//   }
+//   .show-container {
+//     height: 10rem;
+//   }
+//   @media screen and (min-width: 800px) {
+//     .nav-center {
+//       max-width: 1170px;
+//       margin: 0 auto;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//     }
+//     .nav-header {
+//       padding: 0;
+//     }
+//     .nav-toggle {
+//       display: none;
+//       list-style: none;
 
-    }
-    .links-container {
-      height: auto !important;
-    }
-    .links {
-      display: flex;
-      list-style: none;
-    }
-    .links a {
-      padding: 0;
-      margin: 0 0.5rem;
+//     }
+//     .links-container {
+//       height: auto !important;
+//     }
+//     .links {
+//       display: flex;
+//       list-style: none;
+//     }
+//     .links a {
+//       padding: 0;
+//       margin: 0 0.5rem;
 
-    }
-    .links a:hover {
-      padding: 0;
-      background: transparent;
+//     }
+//     .links a:hover {
+//       padding: 0;
+//       background: transparent;
 
-    }
-    // .social-icons {
-    //   // display: flex;
-    // }
-    // .social-icons a {
-    //   margin: 0 0.5rem;
-    //   color: var(--clr-primary-5);
-    //   transition: var(--transition);
-    // }
-    // .social-icons a:hover {
-    //   color: var(--clr-primary-7);
-    // }
-  }
+//     }
+//     // .social-icons {
+//     //   // display: flex;
+//     // }
+//     // .social-icons a {
+//     //   margin: 0 0.5rem;
+//     //   color: var(--clr-primary-5);
+//     //   transition: var(--transition);
+//     // }
+//     // .social-icons a:hover {
+//     //   color: var(--clr-primary-7);
+//     // }
+//   }
 
 
   

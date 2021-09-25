@@ -2,12 +2,11 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 
 
-const showButton = () => {
+const showButton = ({children, onClick}) => {
     
-
     return(
         <>
-            <Button className="btn-primary showBtn">Show me more</Button>
+            <Button onClick={onClick} className="btn-primary showBtn">Show me more</Button>
         </>
     )
 }

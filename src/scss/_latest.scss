@@ -1,0 +1,32 @@
+.latest{
+    background-color: $primary;
+    .card{
+        background-image: linear-gradient(to right, #243949 , #517FA4);
+        border: none;
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        padding: 2%;
+        .cardText{
+            font-size: 16px;
+        }
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            // padding-right: 10px;
+            .html{
+                background-color: #DD4B25;
+                border: none;
+            }
+            .css{
+                background-color: #1572B7;
+                border: none;
+            }
+            .js{
+                background-color: #F7DF1E;
+                border: none;
+                
+            }
+        }
+        }
+}

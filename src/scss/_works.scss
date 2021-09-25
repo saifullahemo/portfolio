@@ -1,40 +1,57 @@
 
   .works-container {
-    // position: relative;
-    background-color: $background;
-    // opacity: 0.1;
-    height: 100vh;
-    
-    .imgSide{
+    position: relative;
+    // height: 100vh;
+    justify-content: center;
+    background-image: url('../assets/images/background.png');
+    background-attachment: fixed;
+    background-size: cover;
+
+    .work{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+
+      .imgSide{
       max-height: 100%;
       width: 550px;
-      /* right: 0; */
-      float: right;
+      margin-top: 30%;
+      left: 50%;
+      z-index: 0;
     }
-  
-    h1{
-      // position: absolute;
-       margin-top: 4rem;
-       margin-left: 1em;
-       letter-spacing: 3px;
-      //  margin-right: 3em;
-       display: block;
-    }
+    .foot{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
+      .numText{        
+        float: right;  
+        font-weight: 400;   
+    }
+    
+  }
+    h1{
+      position: absolute;
+      display: block;
+      z-index: 1;
+    }
+    
     .image{
-      // position: absolute;
       object-fit: cover;
       width: 300px;
       height: 40px;
-      margin-left: 9rem;
-      margin-top: 2em;
+      margin-top: 40%;
       object-fit: cover;
+      z-index: 99;
     }
     h4{
-      // position: absolute;
-      margin-left: 9rem;
-      margin-top: 2em;
+    
       font-weight: 400 !important;
+      z-index: 1;
     }
+   
+  }
   
   }
