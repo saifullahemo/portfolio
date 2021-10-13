@@ -10,19 +10,11 @@ import Particle from '../particle'
 const Works = () => {
     
     const [test, setTest] = useState('Explore the Space');
-    // const [color, setColor] = useState({color: "#051B38" })
-    // const [isLatest, setIsLatest] = useState(false);
     const history = useHistory();
     const [isAuth, setIsAuth] = useState(true);
 
     if(!isAuth) {
         return <Redirect to="/latest" />
-    }
-
-    const lastestWorks = () =>{
-           
-            console.log(lastestWorks);
-
     }
     
     return (

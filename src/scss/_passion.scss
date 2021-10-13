@@ -1,12 +1,15 @@
 .passion{
-    background-color: $primary;
+    background: linear-gradient(180deg, #04172F , #051C38 80%);
 
     .design{
-        max-width: 100%;
+        width: 100%;
         height: 60px;
         object-fit: contain;
     }
     .card{
         background-color: #04172F;
+    }
+    h3{
+        margin-left: 11%;
     }
 }

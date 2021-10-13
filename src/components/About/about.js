@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Divider from '../../assets/images/divider.png'
 import image from '../../assets/images/image.png'
 import {Container, Row, Col } from 'react-bootstrap';
-import Button from '../Button/Button'
+// import Button from '../Button/Button'
 import Passion from './passion'
 
 function About() {
@@ -32,7 +32,7 @@ function About() {
 
                     <Row className="m-0 p-0 mt-5 align-items-center">
                             <Col md={6}>
-                                <Button />
+                                {/* <Button /> */}
                             </Col>
 
                             <Col md={6}>
