@@ -1,19 +1,12 @@
 import React,{useState} from 'react'
-import Navbar from './components/Navbar/Navbar'
 import Sidebar from './components/Navbar/Sidebar'
-import Hero from './components/Hero/Hero'
+import Home from './components/Hero/Home'
 import Works from './components/works/works'
-import Latest from './components/works/latest'
 import About from './components/About/about'
 import Contact from './components/Contact/contact'
-import Home from './assets/images/Home.png'
-import MenuIcon from '@material-ui/icons/Menu';
-import { IconButton } from "@material-ui/core";
 import styled from 'styled-components';
 
 import { Route, Switch as Switching } from "react-router";
-
-// import {BrowserRouter as Router, Route, Link, Navlink, Switch} from "react-router-dom";
 
 
 function App() {
@@ -31,32 +24,15 @@ function App() {
               </IconButton>
             </div> */}
             <MainContentStyled>
-                <div className="lines">
-                  <div className="line-1"></div>
-                  <div className="line-2"></div>
-                  <div className="line-3"></div>
-                  <div className="line-4"></div>
-                </div>
 
                 <Switching>
-                  <Route path="/" exact> 
-                    <Hero />
-                  </Route>
-                  
-                  <Route path="/about" exact> 
-                    <About />
-                  </Route>
-                  
-                  <Route path="/works" exact> 
-                    <Works />
-                  </Route>
-
-                  <Route path="/contact" exact> 
-                    <Contact />
-                  </Route>
+                  <Route path="/" exact> <Home /></Route>  
+                  <Route path="/about" exact> <About /></Route>
+                  <Route path="/works" exact> <Works /></Route>
+                  <Route path="/contact" exact> <Contact /></Route>
                 </Switching>
+
             </MainContentStyled>
-                {/* <Navbar /> */}
     </div>
   );
 }

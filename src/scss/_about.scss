@@ -1,74 +1,50 @@
 
   .about-container {
     position: relative;
-    // background-color: $background;
-    height: 100vh;
+    // height: 100vh;
     justify-content: center;
     background-image: url('../assets/images/background.png');
     background-attachment: fixed;
     background-size: cover;
-    // left: 50%;
     
     .about{
       position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 80%;
-      top: 50%;
-
+      left: 5%;
+      top: 0;
 
       .imgSide{
         max-height: 100%;
         width: 550px;
-        /* right: 0; */
-        // float: right;
-        margin-top: 2em;
-        // margin-right: 3em;
+        margin-top: 35%;
         z-index: 0;
-        padding-left: 10%;
+        // padding-left: 10%;
       }
-      .numText{
-        float: right;
-        // margin-right: 1em;
-        margin-bottom: 1rem;   
-        font-weight: 400;   
-        // bottom: 0;
-      }
-      
+     
       h1{
         position: absolute;
-        // margin-top: 2rem;
-        //  padding-left: 1em;
-        //  letter-spacing: 3px;
-        //  margin-right: 3em;
+        margin-top: 10%;
         display: block;
         z-index: 99;
       }
       
       .image{
-        // position: absolute;
         object-fit: cover;
         width: 300px;
         height: 40px;
-        // margin-left: 0%;
-        margin-top: 25%;
+        margin-top:50% !important;
         object-fit: cover;
       }
+
       h4{
-        // position: absolute;
-        // margin-left: 8rem;
-        margin-top: 2em !important;
+        margin-top: 10% !important;
         font-weight: 400 !important;
         z-index: 1;
       }
-      
     }
+
       .icons{
         display: flex;
-        // justify-content: center;
-      // margin-top: 1em;
 
-      
       .icon{
           border: 2px solid $primary-shade;
           display: flex;
