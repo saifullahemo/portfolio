@@ -1,10 +1,10 @@
 import React from 'react'
 import {Row, Col, Container} from 'react-bootstrap'
-import js from '../../assets/images/js.png'
+import js from '../assets/js.png'
 
 function Skill() {
     return (
-        <React.Fragment>
+        <>
             <div className="skill ">
                 <h3>Skill set</h3>
                 <Row className="d-flex skills">
@@ -49,7 +49,7 @@ function Skill() {
                 </Row>
             </div>
             
-        </React.Fragment>
+        </>
     )
 }
 

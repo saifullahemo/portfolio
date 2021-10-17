@@ -1,11 +1,16 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
+import Hero from '../components/Hero'
+import Divider from '../assets/divider.png'
 
-function Home() {
+export default function Home() {
     return (
-        <div>
-            
-        </div>
+        <Hero 
+        
+        title="Abu Rayhan Md Saifullah" 
+        subtitle="Front-end Developer"
+        divider={Divider}
+        >
+        </Hero>
     )
 }
 
-export default Home

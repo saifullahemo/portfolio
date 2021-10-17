@@ -31,7 +31,7 @@ export const social = [
     h1: 'Abu Rayhan Md Saifullah',
     text1: 'saifullahemo@gmail.com',
     url: 'https://www.instagram.com',
-    img: require('./assets/images/divider.png'),
+    // img: require('./assets/divider.png'),
     icon: <FaInstagram />,
     
     h4: 'Frontend Developer',

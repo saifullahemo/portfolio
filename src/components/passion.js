@@ -1,13 +1,13 @@
 import React from 'react'
 import { Row, Col, Card, Button, CardGroup } from 'react-bootstrap';
-import Design from '../../assets/images/Group.png'
-import Developing from '../../assets/images/developing.png'
-import Travelling from '../../assets/images/travelling.png'
+import Design from '../assets/Group.png'
+import Developing from '../assets/developing.png'
+import Travelling from '../assets/travelling.png'
 import Skill from './skill'
 
 function Passion() {
     return (
-        <React.Fragment>
+        <>
             <div className="passion p-5">
                 <h3 className="text-align-center pb-5">Passion</h3>
                 <Row className="d-flex justify-content-center">
@@ -55,7 +55,7 @@ function Passion() {
 
                 <Skill />
             </div>
-        </React.Fragment>
+        </>
     )
 }
 

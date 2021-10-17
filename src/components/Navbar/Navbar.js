@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
-import avatar from '../../assets/images/Avatar.jpg'
+// import avatar from '../../assets/images/Avatar.jpg'
 import { links } from '../../Data'
 
 const Navbar = () =>{

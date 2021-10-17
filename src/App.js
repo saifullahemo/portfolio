@@ -1,9 +1,12 @@
 import React,{useState} from 'react'
 import Sidebar from './components/Navbar/Sidebar'
-import Home from './components/Hero/Home'
-import Works from './components/works/works'
-import About from './components/About/about'
-import Contact from './components/Contact/contact'
+import Home from './pages/Home'
+import Works from './pages/Works'
+import About from './pages/About'
+import Contact from './pages/Contact'
+// import Works from './components/works/works'
+// import About from './components/About/about'
+// import Contact from './components/Contact/contact'
 import styled from 'styled-components';
 
 import { Route, Switch as Switching } from "react-router";
